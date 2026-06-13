@@ -1,0 +1,28 @@
+<svg width="400" height="120" viewBox="0 0 400 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="120" rx="20" fill="#F0EEFF"/>
+
+  <!-- Globe circle -->
+  <circle cx="60" cy="60" r="34" stroke="#2D2B8F" stroke-width="2"/>
+  <ellipse cx="60" cy="60" rx="34" ry="14" stroke="#2D2B8F" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.35"/>
+  <line x1="60" y1="26" x2="60" y2="94" stroke="#2D2B8F" stroke-width="1" opacity="0.2"/>
+
+  <!-- Speech bubble -->
+  <rect x="36" y="40" width="48" height="28" rx="10" fill="url(#bgrad2)"/>
+  <path d="M44 68 L40 78 L55 68Z" fill="url(#bgrad2)"/>
+
+  <!-- Sound waves -->
+  <path d="M50 50 Q53 54 50 58" stroke="white" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+  <path d="M54 47 Q58.5 54 54 61" stroke="white" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.75"/>
+  <path d="M58 44 Q64 54 58 64" stroke="white" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.4"/>
+
+  <!-- Wordmark dark -->
+  <text x="112" y="73" font-family="'Syne', 'Arial Black', sans-serif" font-weight="800" font-size="54" fill="#0D0D12" letter-spacing="-1">Speek</text>
+
+  <defs>
+    <linearGradient id="bgrad2" x1="36" y1="40" x2="84" y2="78" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D2B8F"/>
+      <stop offset="100%" stop-color="#6C63FF"/>
+    </linearGradient>
+  </defs>
+</svg>

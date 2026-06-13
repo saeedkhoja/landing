@@ -1,0 +1,26 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- App icon background rounded square -->
+  <rect width="200" height="200" rx="44" fill="url(#iconbg)"/>
+
+  <!-- Globe -->
+  <circle cx="100" cy="95" r="52" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <ellipse cx="100" cy="95" rx="52" ry="22" stroke="rgba(255,255,255,0.18)" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <line x1="100" y1="43" x2="100" y2="147" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+
+  <!-- Speech bubble large -->
+  <rect x="62" y="68" width="76" height="46" rx="16" fill="rgba(255,255,255,0.18)"/>
+  <rect x="62" y="68" width="76" height="46" rx="16" fill="white" opacity="0.1"/>
+  <path d="M74 114 L68 130 L90 114Z" fill="rgba(255,255,255,0.18)"/>
+
+  <!-- Sound waves -->
+  <path d="M82 84 Q87 91 82 98" stroke="white" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M89 79 Q96 91 89 103" stroke="white" stroke-width="2.8" stroke-linecap="round" fill="none" opacity="0.75"/>
+  <path d="M96 74 Q106 91 96 108" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.45"/>
+
+  <defs>
+    <linearGradient id="iconbg" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D2B8F"/>
+      <stop offset="100%" stop-color="#6C63FF"/>
+    </linearGradient>
+  </defs>
+</svg>
