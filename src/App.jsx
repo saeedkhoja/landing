@@ -46,31 +46,29 @@ function Nav() {
   }, [open])
   const close = () => setOpen(false)
   return (
-    <header className={`nav ${scrolled || open ? 'nav--scrolled' : ''}`}>
-      <a className="nav__brand" href="#top" onClick={close}>
-        <img src={ICON} alt="Speek" />
-        <span>Speek</span>
-      </a>
-      <nav className="nav__links">
-        <a href="#how">How it works</a>
-        <a href="#features">Features</a>
-        <a href="#world">The map</a>
-        <a href="#blog">Blog</a>
-      </nav>
-      <a href="#waitlist" className="btn btn--primary btn--sm nav__cta">Join the waitlist</a>
-      <button
-        className={`nav__burger ${open ? 'nav__burger--open' : ''}`}
-        onClick={() => setOpen((o) => !o)}
-        aria-label="Toggle menu"
-        aria-expanded={open}
-      >
-        <span /><span /><span />
-      </button>
-      <div className={`nav__mobile ${open ? 'nav__mobile--open' : ''}`}>
-        <a className="nav__brand nav__mobile-brand" href="#top" onClick={close}>
+    <>
+      <header className={`nav ${scrolled || open ? 'nav--scrolled' : ''}`}>
+        <a className="nav__brand" href="#top" onClick={close}>
           <img src={ICON} alt="Speek" />
           <span>Speek</span>
         </a>
+        <nav className="nav__links">
+          <a href="#how">How it works</a>
+          <a href="#features">Features</a>
+          <a href="#world">The map</a>
+          <a href="#blog">Blog</a>
+        </nav>
+        <a href="#waitlist" className="btn btn--primary btn--sm nav__cta">Join the waitlist</a>
+        <button
+          className={`nav__burger ${open ? 'nav__burger--open' : ''}`}
+          onClick={() => setOpen((o) => !o)}
+          aria-label="Toggle menu"
+          aria-expanded={open}
+        >
+          <span /><span /><span />
+        </button>
+      </header>
+      <div className={`nav__mobile ${open ? 'nav__mobile--open' : ''}`}>
         <nav className="nav__mobile-links">
           <a href="#how" onClick={close}>How it works</a>
           <a href="#features" onClick={close}>Features</a>
@@ -79,7 +77,7 @@ function Nav() {
         </nav>
         <a href="#waitlist" className="btn btn--primary nav__mobile-cta" onClick={close}>Join the waitlist</a>
       </div>
-    </header>
+    </>
   )
 }
 
