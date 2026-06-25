@@ -195,11 +195,11 @@ function WinWin() {
           <ConnectShowcase />
         </div>
         <div className="winwin__card">
-          <div className="winwin__icon">💜</div>
-          <h3>Natives get connection</h3>
+          <div className="winwin__icon">🌍</div>
+          <h3>Natives grow their network</h3>
           <p>
-            Native speakers come for the friendships — and maybe more. Meet
-            interesting people worldwide who genuinely want to know you.
+            Native speakers come for the friendships and a truly global network.
+            Meet interesting people worldwide who genuinely want to know you.
           </p>
         </div>
       </div>
@@ -232,11 +232,11 @@ function Human() {
             </p>
           </div>
           <div className="human__col">
-            <h3>💜 If you're a native speaker</h3>
+            <h3>🌍 If you're a native speaker</h3>
             <p>
-              Meet fascinating people from all over the world. Find a chat
-              partner, a new friend — maybe something more. You bring fluency;
-              the world brings you connection. Everyone wins.
+              Meet fascinating people from all over the world. Find a
+              conversation partner, a new friend, and grow a global network. You
+              bring fluency; the world brings you connection. Everyone wins.
             </p>
           </div>
         </div>
@@ -250,7 +250,7 @@ function Features() {
   const feats = [
     { icon: '🗺', t: 'Discover on the map', d: 'A living, breathing globe of people online right now. Tap anywhere and meet someone new.' },
     { icon: '🎙', t: 'Crystal-clear live calls', d: 'Low-latency voice and video built for real conversation, not laggy lectures.' },
-    { icon: '💬', t: 'Match like a dating app', d: 'Profiles, interests, vibes. Connect with people you actually click with.' },
+    { icon: '🤝', t: 'Match by interests & goals', d: 'Profiles, interests and speaking goals. Connect with people who push your level up.' },
     { icon: '🌐', t: 'Every accent welcome', d: 'British, American, Aussie, Indian — practice the English you actually want to speak.' },
     { icon: '🛡', t: 'Safe & moderated', d: 'Verified profiles, easy reporting, and smart safety tools so everyone feels comfortable.' },
     { icon: '📈', t: 'See yourself improve', d: 'Track speaking streaks and milestones. Feel your fluency grow week by week.' },
