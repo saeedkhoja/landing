@@ -28,44 +28,21 @@ function Phone({ children, className = '' }) {
   )
 }
 
-/* ---------- Map discovery screen ---------- */
+/* ---------- Real app screenshots ----------
+   Genuine captures of the Speek Flutter app (see mobile/), rendered inside the
+   phone frame. */
 export function PhoneMap({ className = '' }) {
-  const pins = [
-    { x: 22, y: 28, i: 0 },
-    { x: 64, y: 20, i: 1 },
-    { x: 78, y: 46, i: 2 },
-    { x: 36, y: 52, i: 3 },
-    { x: 56, y: 64, i: 4 },
-    { x: 18, y: 70, i: 5 },
-  ]
   return (
     <Phone className={className}>
-      <div className="screen-map">
-        <div className="screen-map__top">
-          <span className="screen-map__title">Explore</span>
-          <span className="screen-map__online"><i /> 8,412 online now</span>
-        </div>
-        <div className="screen-map__grid">
-          {pins.map((p, i) => (
-            <button
-              className={`map-pin ${i === 2 ? 'map-pin--active' : ''}`}
-              style={{ left: `${p.x}%`, top: `${p.y}%` }}
-              key={i}
-            >
-              <img src={P(p.i)} alt="" loading="lazy" />
-              <span className="map-pin__ping" />
-            </button>
-          ))}
-          <div className="map-card">
-            <img src={PORTRAITS.emma} alt="Emma from London" loading="lazy" />
-            <div>
-              <b>Emma · 🇬🇧 London</b>
-              <span>Native speaker · loves travel</span>
-            </div>
-            <button className="map-card__call">📞</button>
-          </div>
-        </div>
-      </div>
+      <img className="screen-shot" src="/shots/map.png" alt="Speek live map — thousands of speakers online worldwide" loading="lazy" />
+    </Phone>
+  )
+}
+
+export function PhoneChat({ className = '' }) {
+  return (
+    <Phone className={className}>
+      <img className="screen-shot" src="/shots/chat.png" alt="Speek chat — messages, voice notes and calls" loading="lazy" />
     </Phone>
   )
 }
@@ -98,25 +75,11 @@ export function PhoneLiveCall({ className = '' }) {
   )
 }
 
-/* ---------- Profile / match screen ---------- */
+/* ---------- Profile screen (real screenshot) ---------- */
 export function PhoneProfile({ className = '' }) {
   return (
     <Phone className={className}>
-      <div className="screen-profile">
-        <img className="screen-profile__photo" src={PORTRAITS.sofia} alt="Sofia's profile" loading="lazy" />
-        <div className="screen-profile__info">
-          <h4>Sofia, 24 <span>🇪🇸 → 🇬🇧</span></h4>
-          <p>Learning English · Loves indie music & hiking</p>
-          <div className="chips">
-            <span>B2 level</span><span>Music</span><span>Travel</span>
-          </div>
-          <div className="screen-profile__actions">
-            <button className="circle circle--pass">✕</button>
-            <button className="circle circle--like">💜</button>
-            <button className="circle circle--call">📞</button>
-          </div>
-        </div>
-      </div>
+      <img className="screen-shot" src="/shots/profile.png" alt="Speek profile — streaks, premium and rewards" loading="lazy" />
     </Phone>
   )
 }

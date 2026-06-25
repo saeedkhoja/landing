@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import {
   PhoneMap,
+  PhoneChat,
   PhoneLiveCall,
   PhoneProfile,
   ConnectShowcase,
@@ -273,6 +274,33 @@ function Features() {
   )
 }
 
+function AppShowcase() {
+  const screens = [
+    { Comp: PhoneMap, eyebrow: 'The live map', t: 'Thousands online, right now', d: 'Open the map and see real speakers around the world who are online and ready to talk this second.' },
+    { Comp: PhoneChat, eyebrow: 'Chat & voice notes', d: 'Break the ice with a message or a voice note, then jump straight into a live call — all in one place.', t: 'Talk your way in' },
+    { Comp: PhoneProfile, eyebrow: 'Your profile', d: 'Build streaks, earn premium, invite friends and level up your speaking — every conversation counts.', t: 'Grow every day' },
+  ]
+  return (
+    <section className="section showcase" id="app">
+      <div className="section__head">
+        <span className="eyebrow">Inside Speek</span>
+        <h2>Real screens from the real app.</h2>
+        <p className="section__lead">No concept art — these are actual screenshots from Speek on iOS &amp; Android.</p>
+      </div>
+      <div className="showcase__grid">
+        {screens.map(({ Comp, eyebrow, t, d }) => (
+          <div className="showcase__item" key={t}>
+            <div className="showcase__phone"><Comp /></div>
+            <span className="eyebrow">{eyebrow}</span>
+            <h3>{t}</h3>
+            <p>{d}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
+
 function WorldSection() {
   return (
     <section className="section world" id="world">
@@ -428,6 +456,7 @@ export default function App() {
         <HowItWorks />
         <Human />
         <WinWin />
+        <AppShowcase />
         <Features />
         <WorldSection />
         <Blog />
