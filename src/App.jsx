@@ -67,11 +67,17 @@ function Nav() {
         <span /><span /><span />
       </button>
       <div className={`nav__mobile ${open ? 'nav__mobile--open' : ''}`}>
-        <a href="#how" onClick={close}>How it works</a>
-        <a href="#features" onClick={close}>Features</a>
-        <a href="#world" onClick={close}>The map</a>
-        <a href="#blog" onClick={close}>Blog</a>
-        <a href="#waitlist" className="btn btn--primary" onClick={close}>Join the waitlist</a>
+        <a className="nav__brand nav__mobile-brand" href="#top" onClick={close}>
+          <img src={ICON} alt="Speek" />
+          <span>Speek</span>
+        </a>
+        <nav className="nav__mobile-links">
+          <a href="#how" onClick={close}>How it works</a>
+          <a href="#features" onClick={close}>Features</a>
+          <a href="#world" onClick={close}>The map</a>
+          <a href="#blog" onClick={close}>Blog</a>
+        </nav>
+        <a href="#waitlist" className="btn btn--primary nav__mobile-cta" onClick={close}>Join the waitlist</a>
       </div>
     </header>
   )
